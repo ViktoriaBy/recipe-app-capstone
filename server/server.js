@@ -37,6 +37,7 @@ app.get('/', (req, res) => {
 //   console.log(`Listening on port ${port}`)
 // })
 
-const port = process.env.SERVER_PORT || 4005 //for heroku only
+// const port = process.env.SERVER_PORT || 4005 //for heroku only
 
-app.listen(port, () => console.log(`Server running on 4005`))
+app.listen(process.env.PORT || 4040, 
+	() => console.log("Server is running..."));
