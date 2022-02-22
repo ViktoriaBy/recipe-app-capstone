@@ -16,7 +16,7 @@
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node ./server/server.js"
+    "start": "node server/server.js"
   },
   "keywords": [],
   "author": "",
@@ -29,5 +29,6 @@
     "url": "https://github.com/ViktoriaBy/recipe-app-capstone/issues"
   },
   "homepage": "https://github.com/ViktoriaBy/recipe-app-capstone#readme",
+  "devDependencies": {},
   "description": ""
 }
