@@ -14,10 +14,6 @@ app.use(express.json());
 app.use(express.static('public'));
 
 
-// Set up home route
-app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname , '../public/index.html'))
-  });
 
 // CREATE DB WITH SENDING POST http://localhost:4005/api/seed TO POSTMEN
 app.post('/seed', seed)
@@ -27,14 +23,20 @@ app.get('/api/recipes', getRecipe)
 app.post('/api/recipes', postRecipe)
 app.delete('/api/recipes/:meal_id', deleteRecipe)
 
+// Set up home route
+app.get('/', (req, res) => {
+    res.sendFile(path.join(__dirname , '../public/index.html'))
+  });
 
 
-// port = process.env.PORT || 4005 //for heroku only
 
-// app.listen(process.env.SERVER_PORT, () => console.log(`server running on port ${process.env.SERVER_PORT}`))
 
-const port = process.env.PORT || 4005
+// const port = process.env.PORT || 4005
 
-app.listen(port, () => {
-  console.log(`Listening on port ${port}`)
-})
+// app.listen(port, () => {
+//   console.log(`Listening on port ${port}`)
+// })
+
+const port = process.env.SERVER_PORT || 4005 //for heroku only
+
+app.listen(port, () => console.log(`Server running on 4005`))
