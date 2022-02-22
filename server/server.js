@@ -29,6 +29,12 @@ app.delete('/api/recipes/:meal_id', deleteRecipe)
 
 
 
-port = process.env.PORT || 4005 //for heroku only
+// port = process.env.PORT || 4005 //for heroku only
 
-app.listen(process.env.SERVER_PORT, () => console.log(`server running on port ${process.env.SERVER_PORT}`))
+// app.listen(process.env.SERVER_PORT, () => console.log(`server running on port ${process.env.SERVER_PORT}`))
+
+const port = process.env.PORT || 4005
+
+app.listen(port, () => {
+  console.log(`Listening on port ${port}`)
+})
