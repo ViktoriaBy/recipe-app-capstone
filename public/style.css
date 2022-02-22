@@ -1,0 +1,102 @@
+
+#mainNav{
+background-color: #ECE2C5;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  
+}
+
+.navbar-brand{
+font-size: 45px;
+font-family: 'Oooh Baby', cursive;
+font-weight: bolder;
+}
+
+.nav-link{
+    font-size: 30px;
+    font-family: 'Oooh Baby', cursive; 
+}
+
+ #searchBtn{
+ 
+    border: 1px solid black;
+    width: 20%;
+} 
+
+#searchBtn:hover{
+    background-color: #F2D349;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; 
+    border: none;
+   
+}
+
+.footer{
+width: 100%;
+left: 0;
+bottom: 0;
+background-color: #C3DBC5;
+height: 55px;
+}
+
+.footer, .p {
+font-size: 18px;
+font-family: 'Oooh Baby', cursive;
+}
+
+#receipe-list{
+     padding-bottom: 15%;
+     
+}
+
+#saveIcon{
+    font-size: 30px;
+    color: #F2D349;
+}
+
+#saveIcon:hover{
+    color: #eedb87;
+    font-size: 30px;
+    text-shadow:2px 4px 6px rgba(0, 0, 0, 0.24); 
+}
+
+#deleteIcon{
+    font-size: 25px;
+    color: #F2D349;
+}
+
+#deleteIcon:hover{
+    font-size: 25px;
+    color:red;
+    text-shadow:2px 4px 6px rgba(0, 0, 0, 0.24); 
+}
+
+#btnViewReceipe{
+    font-size: 10px;
+    border: 1px solid black;
+    float: right;
+}
+
+
+#btnViewReceipe:hover{
+    background-color: #F2D349;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; 
+    border: none;
+}
+
+#exampleModalLabel{
+    font-size: 45px;
+font-family: 'Oooh Baby', cursive;
+font-weight: bolder;
+}
+
+#menuLink{
+    text-align: center;
+    text-decoration: none;
+    color: #F2D349;
+}
+
+#menuLink:hover{
+    color:black;
+    text-shadow:2px 4px 6px rgba(0, 0, 0, 0.24); 
+}
+
