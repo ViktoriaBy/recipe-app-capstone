@@ -21,5 +21,13 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ViktoriaBy/recipe-app-capstone.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ViktoriaBy/recipe-app-capstone/issues"
+  },
+  "homepage": "https://github.com/ViktoriaBy/recipe-app-capstone#readme",
   "description": ""
 }
