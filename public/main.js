@@ -71,7 +71,7 @@ function saveRecipe(idMeal){
   // Get object from Recipes API based on Meal ID then Send Meal object to back end
   axios.get(`https://www.themealdb.com/api/json/v1/1/lookup.php?i=${idMeal}`)
   .then(data => {
-      axios.post(`http://localhost:4005/api/recipes`, data.data.meals[0])
+      axios.post(`https://recipe-app-capstone.herokuapp.com/api/recipes`, data.data.meals[0]) //http://localhost:4005/api/recipes
       // .then(() => alert(`${data.data.meals[0].strMeal} MEAL HAS BEEN ADDED!`))
       // 
     
@@ -86,7 +86,7 @@ function saveRecipe(idMeal){
 function getRecipeFromLocalApi(){
   recipeList.innerHTML = ''
 
-  axios.get(`http://localhost:4005/api/recipes`)
+  axios.get(`https://recipe-app-capstone.herokuapp.com/api/recipes`) //http://localhost:4005/api/recipes
   .then(data => {
 
       data.data.forEach(food => {
@@ -128,7 +128,7 @@ function getRecipeFromLocalApi(){
 
 //DELETE CHOSEN RECEIPE FROM FRONTEND VIEW
 function deleteRecipe(meal_id){
-  axios.delete(`http://localhost:4005/api/recipes/${meal_id}`)
+  axios.delete(`https://recipe-app-capstone.herokuapp.com/api/recipes/${meal_id}`)//http://localhost:4005/api/recipes/
       .then(() => getRecipeFromLocalApi())
       .catch(err => console.log(err))
 }
