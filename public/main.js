@@ -50,7 +50,7 @@ function getRecipeThemealdbApi(){
                     <div class="modal-body">
                       ${food.strInstructions}
                     </div>
-                    <a href="${food.strSource}" id="menuLink">See full menu</a>
+                    <a href="${food.strSource}" id="menuLink">See full recipe</a>
                     </br>
                     <div class="modal-footer">
                       <button type="button" class="btn btn-warning" data-bs-dismiss="modal">Close</button>
