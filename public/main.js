@@ -111,7 +111,7 @@ function getRecipeFromLocalApi(){
                   <div class="modal-body">
                     ${food.recipe_instructions}
                   </div>
-                  <a href="${food.recipe_source} id="menuLink">${food.recipe_title} Source Link</a>
+                  <a href="${food.recipe_source}" id="menuLink">${food.recipe_title} Source Link</a>
                   <div class="modal-footer">
                     <button type="button" class="btn btn-warning" data-bs-dismiss="modal">Close</button>
                   </div>
